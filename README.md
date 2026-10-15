@@ -19,15 +19,24 @@ Store your CTFd session cookie as `CTFD_SESSION` in Infisical.
 ## Usage
 
 ```bash
-maosolve "FLAG{" --url https://ctf.example.com
+maosolve init    # creates maosolve.toml
 ```
 
-### Options
+Edit `maosolve.toml` with your CTF details:
 
-| Flag | Description |
-|------|-------------|
-| `FLAG_FORMAT` | Flag prefix to search for (e.g. `CTF{`, `flag{`) |
-| `--url` | CTFd instance URL (required) |
-| `--out` | Output directory (default: `challdump`) |
-| `--env` | Infisical environment (default: `dev`) |
-| `--project-id` | Infisical project ID (or set `INFISICAL_PROJECT_ID`) |
+```toml
+[maosolve]
+flag_format = "FLAG{"
+ctf_url = "https://ctf.example.com"
+output_dir = "challdump"
+
+[infisical]
+env = "dev"
+project_id = ""
+```
+
+Then run:
+
+```bash
+maosolve
+```

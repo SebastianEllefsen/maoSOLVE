@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "maosolve"
 version = "3.0.0"
 description = "Agentic AI CTF solver"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     "click>=8.1",
     "rich>=13.0",
