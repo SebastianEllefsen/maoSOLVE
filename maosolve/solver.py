@@ -5,10 +5,6 @@ import sys
 
 
 def scan_for_flags(directory: str, flag_format: str) -> list[tuple[str, str]]:
-    """Run stringcheese on every file in the directory tree.
-
-    Returns a list of (file_path, flag) tuples.
-    """
     if not shutil.which("stringcheese"):
         print("Error: 'stringcheese' not found. Install it:")
         print("  pip install stringcheese")

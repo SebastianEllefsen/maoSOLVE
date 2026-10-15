@@ -4,7 +4,6 @@ import sys
 
 
 def fetch_challenges(url: str, session: str, out: str = "challdump") -> None:
-    """Download all challenges from a CTFd instance using ctfdget."""
     if not shutil.which("ctfdget"):
         print("Error: 'ctfdget' not found. Install it:")
         print("  go install github.com/HanEmile/ctfdget@latest")

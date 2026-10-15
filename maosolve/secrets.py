@@ -1,11 +1,9 @@
-import json
 import shutil
 import subprocess
 import sys
 
 
 def get_ctfd_session(env: str = "dev", project_id: str | None = None) -> str:
-    """Fetch the CTFD_SESSION secret from Infisical."""
     if not shutil.which("infisical"):
         print("Error: 'infisical' CLI not found. Install it: https://infisical.com/docs/cli/overview")
         sys.exit(1)
