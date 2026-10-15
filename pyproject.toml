@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maosolve"
+version = "3.0.0"
+description = "Agentic AI CTF solver"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.1",
+    "rich>=13.0",
+]
+
+[project.scripts]
+maosolve = "maosolve.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["maosolve*"]
