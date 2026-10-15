@@ -1,4 +1,4 @@
-# maoSOLVE 3
+# maoSOLVE
 
 Agentic AI CTF solver.
 
